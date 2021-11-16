@@ -1,0 +1,41 @@
+<div class="col-md-4 mx-auto">
+
+    <div class="card">
+        <div class="card-header">
+           inicio de sesión
+        </div>
+        <div class="card-body ">
+
+            <img src="/img/login.png"  class="rounded-circle mx-auto d-block m-4 logo" alt="logo">
+            <form action="/users/signin" method="POST">
+          
+              
+                <div class="form-group">
+                     <input
+                        type="email"
+                        class="form-control"
+                        placeholder="correo"
+                        name="mail"
+                       
+                        required
+                       value="{{Correo}}"
+                    />
+                </div>
+                <div class="form-group">
+                     <input
+                        type="password"
+                        class="form-control"
+                        placeholder="contraseña"
+                        name="password"     
+                        required                   
+                       value="{{clave}}"
+                        autofocus 
+                    />
+                </div>
+                </div>
+                <button class="btn btn-info btn-block">inicia sesión</button>
+            </form>
+
+        </div>
+    </div>
+</div>
